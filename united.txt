@@ -1,0 +1,220 @@
+{
+ "cells": [
+  {
+   "cell_type": "raw",
+   "id": "f792b740-f063-4c12-b69c-3871c3d82ac1",
+   "metadata": {},
+   "source": [
+    "Q1. How do you comment code in Python? What are the different types of comments?\n",
+    "ans : In Python, you can add comments to your code to provide explanations, make notes, or temporarily disable parts of the code without affecting the program's functionality. Comments are ignored by the Python interpreter and serve as documentation for developers or readers of the code. There are two main ways to add comments in Python:\n",
+    "\n",
+    "Single-line comments: To add a single-line comment, you use the hash symbol (#) followed by the comment text. Everything after the hash symbol on the same line will be considered a comment.\n",
+    "example: # This is a single-line comment\n",
+    "print(\"Hello, World!\")  # This will print the greeting\n",
+    "Multi-line comments (Docstrings): Multi-line comments, also known as docstrings, are used to provide documentation for functions, classes, and modules. Docstrings are enclosed in triple quotes (single or double) and can span multiple lines. These comments are used to describe the purpose and functionality of the code element they are associated with.\n",
+    "def add_numbers(a, b):\n",
+    "    \"\"\"\n",
+    "    This function takes two numbers as input and returns their sum.\n",
+    "\n",
+    "    Parameters:\n",
+    "    a (int): The first number.\n",
+    "    b (int): The second number.\n",
+    "\n",
+    "    Returns:\n",
+    "    int: The sum of the two input numbers.\n",
+    "    \"\"\"\n",
+    "    return a + b\n"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "bc4bc432-a6a9-4786-a9ab-5402209bec43",
+   "metadata": {},
+   "source": [
+    "Q2. What are variables in Python? How do you declare and assign values to variables?\n",
+    "ans: In Python, a variable is a name that refers to a value stored in memory. It acts as a container for data and allows you to store and manipulate values of different types. Variables provide a way to label and access data, making it easier to work with information in your code.\n",
+    "\n",
+    "Declaring and assigning values to variables in Python is a straightforward process. You can declare a variable by choosing a name for it and using the assignment operator (=) to assign a value to it.\n",
+    "ex : variable_name = value\n"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "7e21af97-22de-4b9a-9cdd-5cbb5554618d",
+   "metadata": {},
+   "source": [
+    "Q3 . How do you convert one data type to another in Python?\n",
+    "ans: In Python, you can convert one data type to another using type conversion functions or constructors. Python provides built-in functions to facilitate type conversion between different data types. Here are some common ways to convert data types:\n",
+    "Integer to Other Types:\n",
+    "\n",
+    "To convert an integer to a string, you can use the str() function:\n",
+    "num_int = 42\n",
+    "num_str = str(num_int)\n",
+    "print(num_str)  # Output: \"42\"\n"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "7bd76253-6e07-44c6-a3c5-24a56db1ce29",
+   "metadata": {},
+   "source": [
+    "Q4. How do you write and execute a Python script from the command line?\n",
+    "ans: To write and execute a Python script from the command line, follow these steps:\n",
+    "\n",
+    "Open a text editor: You can use any text editor to write your Python script. Popular choices include Notepad (on Windows), TextEdit (on macOS), or VSCode, Sublime Text, Atom, or Vim (cross-platform options). Save the file with a .py extension, which indicates it's a Python script.\n",
+    "\n",
+    "Write your Python code: In the text editor, write the Python code you want to execute. For example:\n",
+    "# hello.py\n",
+    "print(\"Hello, World!\")\n",
+    "Save the file: Save the file with your desired name, followed by the .py extension (e.g., hello.py).\n",
+    "\n",
+    "Open the terminal or command prompt:\n",
+    "\n",
+    "On Windows, you can open the Command Prompt or PowerShell.\n",
+    "On macOS or Linux, open the Terminal application.\n",
+    "Navigate to the directory where the Python script is located: Use the cd command (change directory) to move to the directory containing your Python script. For example:\n",
+    "cd /path/to/your/python/script/directory\n",
+    "Execute the Python script: Once you are in the correct directory, use the python command followed by the name of your Python script to run it. For example:\n",
+    "python hello.py\n",
+    "Note: If you have both Python 2 and Python 3 installed on your system, you may need to use python3 instead of python to ensure your script runs with the desired version.\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "208483cc-8eb7-4c7d-a29e-5ab357a6fe7d",
+   "metadata": {},
+   "source": [
+    "Q5. Given a list my_list = [1, 2, 3, 4, 5], write the code to slice the list and obtain the sub-list [2, 3].\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "3b3286ff-101b-4876-a47f-7dd13cdcbe92",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[2, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#ans 5: \n",
+    "my_list = [1, 2, 3, 4, 5]\n",
+    "\n",
+    "# Slice from index 1 (inclusive) to index 3 (exclusive)\n",
+    "sub_list = my_list[1:3]\n",
+    "\n",
+    "print(sub_list)  # Output: [2, 3]\n"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "d4f5ee80-cfda-4bac-9d43-70f3cde39a9d",
+   "metadata": {},
+   "source": [
+    "Q6. What is a complex number in mathematics, and how is it represented in Python?\n",
+    "ans:\n",
+    "In mathematics, a complex number is a number that comprises both a real part and an imaginary part. It is represented in the form a + bj, where a is the real part, b is the imaginary part, and j is the imaginary unit (also denoted as i in some mathematical notations).\n",
+    "\n",
+    "The imaginary unit j represents the square root of -1, and it is used to define the imaginary part of the complex number. When b is zero, the complex number becomes a real number.\n",
+    "\n",
+    "For example, the complex number 3 + 4j has a real part of 3 and an imaginary part of 4.\n",
+    "\n",
+    "In Python, complex numbers are natively supported as a built-in data type. To represent a complex number, you can use the complex() constructor or directly write the number in the format a + bj.\n",
+    "ex : z1 = complex(3, 4)\n",
+    "z2 = 2 + 6j\n",
+    "\n",
+    "# Addition\n",
+    "result_add = z1 + z2\n",
+    "print(result_add)  # Output: (5+10j)\n",
+    "\n",
+    "# Subtraction\n",
+    "result_sub = z1 - z2\n",
+    "print(result_sub)  # Output: (1-2j)\n",
+    "\n",
+    "# Multiplication\n",
+    "result_mul = z1 * z2\n",
+    "print(result_mul)  # Output: (-18+26j)\n",
+    "\n",
+    "# Division\n",
+    "result_div = z1 / z2\n",
+    "print(result_div)  # Output: (0.6666666666666666-0.16666666666666666j)\n"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "0681892b-dc17-4b98-b10c-fb661c904ceb",
+   "metadata": {},
+   "source": [
+    "Q7. What is the correct way to declare a variable named age and assign the value 25 to it?\n",
+    "ans: The correct way to declare a variable named age and assign the value 25 to it in Python is to use the assignment operator (=). Python is a dynamically-typed language, so you don't need to specify the data type explicitly during variable declaration. Here's the correct way to do it:\n",
+    "age = 25\n"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "4b45d90a-a53f-472c-87d9-f533d850b889",
+   "metadata": {},
+   "source": [
+    "Q8. Declare a variable named price and assign the value 9.99 to it. What data type does this variable\n",
+    "belong to?\n",
+    "ans: price = 9.99\n",
+    "print(type(price))  # Output: <class 'float'>\n"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "a005186d-6105-4ece-935f-0ca60fab9585",
+   "metadata": {},
+   "source": [
+    "Q9. Create a variable named name and assign your full name to it as a string. How would you print the\n",
+    "value of this variable?\n",
+    "ans: name = \"yash sharma\"\n",
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "da21a4ee-dece-42aa-aaa4-efbb96484923",
+   "metadata": {},
+   "source": [
+    "Q10. Given the string \"Hello, World!\", extract the substring \"World\".\n",
+    "ans: =\n",
+    "\n",
+    "original_string = \"Hello, World!\"\n",
+    "\n",
+    "# Extract the substring from index 7 to index 12 (exclusive)\n",
+    "substring = original_string[7:12]\n",
+    "\n",
+    "print(substring)  # Output: \"World\"\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
